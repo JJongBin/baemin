@@ -1,0 +1,83 @@
+body{
+}
+
+.container{
+    position: relative;
+}
+.inner{
+    max-width: 1024px;
+    margin: 0 auto;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+
+/* HEADER */
+header .menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100px;
+    width: 100%;
+    z-index: 10;
+}
+#logo{
+    position: absolute;
+    top: 60px;
+    left: 50px;
+    width: 142px;
+}
+#logo img{
+    width: 100%;
+}
+header .submenu{
+    position: absolute;
+    top: 60px;
+    right: 100px;
+}
+header .submenu li{
+    display: inline;
+    margin-right: 15px;
+}
+header .submenu li:last-child{
+    padding-right: 0;
+}
+
+
+
+/* FIRST MAIN VEIW */
+
+/* section .bg-main{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+section .bg-main img{
+    width: auto;
+    height: 100vh;
+    object-fit: center;
+} */
+#section-first{
+    background-image: url("../img/main_05@2x.jpeg");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+section .inner .text-main{
+    position: absolute;
+    left: 50px;
+    top: 20%;
+}
+section .inner .text-main img{
+    width: 440px;
+    max-width: 440px;
+}
+
+
