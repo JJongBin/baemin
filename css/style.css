@@ -1,21 +1,36 @@
 body{
+    color: #fff;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.5;
 }
 
 .container{
     position: relative;
 }
-.inner{
+.header-inner{
     max-width: 1024px;
-    margin: 0 auto;
     position: absolute;
     left: 0;
     top: 0;
     right: 0;
     bottom: 0;
-    margin: auto;
+    margin: 0 auto;
+    max-height: 100vh;
+}
+.inner{
+    position: relative;
+    max-width: 1024px;
+    margin: 0 auto;
+    height: 100vh;
+    padding: 0 50px;
+    box-sizing: border-box;
+}
+.content{
+    padding-top: 165px;
 }
 #scroll-icon{
-    position: absolute;
+    position: fixed;
     bottom: 3%;
     left: 50%;
     width: 20%;
@@ -68,35 +83,87 @@ header .submenu li:last-child{
     background-repeat: no-repeat;
     background-position: 50% 50%;
 }
-section .bener{
+#section-first .bener{
     position: absolute;
     top: 0;
     right: 0;
     width: 109px;
     z-index: 10;
 }
-section .bener img{
+#section-first .bener img{
     width: 100%;
     height: auto;
 }
 
-section .inner .text-main{
+#section-first .header-inner .text-main{
     position: absolute;
     left: 50px;
     top: 20%;
 }
-section .inner .text-main img{
+#section-first .header-inner .text-main img{
     width: 440px;
     max-width: 440px;
 }
-section .inner .download_btn{
+#section-first .header-inner .download_btn{
     position: absolute;
     max-width: 262px;
     right: 0;
     bottom: 0;
 }
-section .inner .download_btn img{
+#section-first .header-inner .download_btn img{
     width: 100%;
 }
 
+
+
+/* SECOND MAIN VIEW */
+#section-second{
+    width: 100%;
+    height: 100vh;
+    background-color: #2ac1bc;
+}
+#section-second .download_btn{
+    position: fixed;
+    top: 130px;
+    right: 10px;
+    width: 200px;
+}
+#section-second .download_btn img{
+    width: 100%;
+}
+
+#section-second .text-second{
+    width: 500px;
+}
+#section-second .text-second img{
+    width: 100%;
+    height: auto;
+}
+#section-second .text{
+    margin-top: 3%;
+    font-size: 1em;
+}
+#section-second .text p:last-child{
+    line-height: 3em;
+}
+#section-second .road{
+    position: absolute;
+    width: 232px;
+    bottom: 16%;
+    right: 21%;
+}
+#section-second .road img{
+    width: 100%;
+    height: auto;
+}
+#section-second .bike{
+    position: absolute;
+    width: 204px;
+    bottom: 13%;
+    right: 17%;
+}
+#section-second .bike img{
+    width: 100%;
+    height: auto;
+}
 
