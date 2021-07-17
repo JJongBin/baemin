@@ -14,6 +14,15 @@ body{
     bottom: 0;
     margin: auto;
 }
+#scroll-icon{
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    width: 20%;
+}
+/* #scroll-icon img{
+    margin-left: -20%;
+} */
 
 
 /* HEADER */
@@ -51,16 +60,6 @@ header .submenu li:last-child{
 
 /* FIRST MAIN VEIW */
 
-/* section .bg-main{
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-section .bg-main img{
-    width: auto;
-    height: 100vh;
-    object-fit: center;
-} */
 #section-first{
     background-image: url("../img/main_05@2x.jpeg");
     width: 100%;
@@ -68,6 +67,17 @@ section .bg-main img{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
+}
+section .bener{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 109px;
+    z-index: 10;
+}
+section .bener img{
+    width: 100%;
+    height: auto;
 }
 
 section .inner .text-main{
@@ -78,6 +88,15 @@ section .inner .text-main{
 section .inner .text-main img{
     width: 440px;
     max-width: 440px;
+}
+section .inner .download_btn{
+    position: absolute;
+    max-width: 262px;
+    right: 0;
+    bottom: 0;
+}
+section .inner .download_btn img{
+    width: 100%;
 }
 
 
