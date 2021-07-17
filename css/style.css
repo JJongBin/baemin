@@ -200,3 +200,41 @@ header .submenu li:last-child{
     width: 100%;
     height: auto;
 }
+
+
+
+/* FOURTH MAIN VIEW */
+#section-fourth{
+    border-top: 1px solid #333;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+}
+#section-fourth .text-fourth{
+    width: 500px;
+}
+#section-fourth .text-fourth img{
+    width: 100%;
+    height: auto;
+}
+#section-fourth .text{
+    margin-top: 3%;
+    font-size: 1em;
+}
+#section-fourth .text p:last-child{
+    line-height: 3em;
+}
+#section-fourth .present{
+    position: absolute;
+    width: 360px;
+    bottom: 0;
+    right: 9%;
+}
+#section-fourth .present img{
+    width: 100%;
+    height: auto;
+}
+
+
+
+
