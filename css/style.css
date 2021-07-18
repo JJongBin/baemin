@@ -338,3 +338,88 @@ header .submenu li:last-child{
     height: auto;
 }
 
+
+
+/* FOOTER */
+#footer-info{
+    border-top: 1px solid #333;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+}
+
+#footer-info .inner{
+    padding: 5% 5%;
+    padding-top: 7%;
+}
+#footer-info .inner .link{
+    margin-top: 3%;
+    width: 450px;
+}
+#footer-info .inner .other{
+    display: flex;
+}
+#footer-info .inner .other:last-child{
+    margin-top: 3%;
+}
+#footer-info .inner .link li{
+    height: 30px;
+    margin-right: 8px;
+    width: 138px;
+}
+#footer-info .inner .link li:last-child{
+    margin-right: 0;
+}
+#footer-info .inner .link li img{
+    max-height: 100%;
+}
+#footer-info .inner .sns-link{
+    width: 30%;
+    margin: 5% 0 5% -2%;
+}
+#footer-info .inner .sns-link ul{
+    /* width: 30%; */
+    margin-left: 3%;
+    display: flex;
+}
+#footer-info .inner .sns-link ul li{
+    margin-right: 6%;
+    width: 40px;
+}
+#footer-info .inner .sns-link ul li:first-child{
+    margin-right: 0;
+}
+#footer-info .inner .sns-link ul li a img{
+    max-width: 100%;
+    vertical-align: baseline;
+    display: inline;
+}
+#footer-info .inner .text{
+    color: #333;
+    font-size: 15px;
+    line-height: 1.7em;
+    font-weight: 400;
+}
+#footer-info .inner .text a{
+    color: #333;
+}
+#footer-info .inner .text .address{
+    padding-bottom: 2%;
+}
+#footer-info .inner .text .business-info{
+    padding-bottom: 2%;
+}
+#footer-info .inner .text .contact{
+    padding-bottom: 2%;
+}
+#footer-info .inner .title{
+    float: right;
+    width: 40%;
+}
+#footer-info .inner .title .txt{
+    width: 176px;
+}
+#footer-info .inner .title .txt img{
+    width: 100%;
+}
