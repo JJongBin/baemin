@@ -7,6 +7,10 @@
 
     <link rel="icon" href="./img/favicon-48x48.png">
     
+    <!-- JS -->
+    <script defer src="./js/main.js"></script>
+    <script defer src="./js/pageChange.js"></script>
+
     <!-- css 초기화 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
     <link rel="stylesheet" href="./css/style.css">
@@ -48,228 +52,235 @@
         </header>
 
 
-        <!-- FIRST MAIN VEIW -->
-        <section id="section-first">
-            <div class="bener">
-                <a href="javascript:void(0)">
-                    <img src="./img/rider-button-mobile@2x.png" alt="라이더 모집">
-                </a>
-            </div>
-            <div class="header-inner">
-                <div class="text-main">
-                    <img src="./img/main_text_05@2x.png" alt="공복에 떡볶이가 그리울 때">
+
+
+        <section id="section-wrap">
+
+            <!-- FIRST MAIN VEIW -->
+            <div id="section-first" class="scroll">
+                <div class="bener">
+                    <a href="javascript:void(0)">
+                        <img src="./img/rider-button-mobile@2x.png" alt="라이더 모집">
+                    </a>
                 </div>
-                <a class="download_btn" href="javascript:void(0)">
-                    <img src="./img/btn_down@2x.png" alt="어플 다운로드">
-                </a>
+                <div class="header-inner">
+                    <div class="text-main">
+                        <img src="./img/main_text_05@2x.png" alt="공복에 떡볶이가 그리울 때">
+                    </div>
+                    <a class="download_btn" href="javascript:void(0)">
+                        <img src="./img/btn_down@2x.png" alt="어플 다운로드">
+                    </a>
+                </div>
             </div>
-        </section>
-
-
-
-        <!-- SECOND MAIN VIEW -->
-        <section id="section-second">
-            <div class="inner">
-                <div class="content">
-                    <div class="text-second">
-                        <img src="./img/ctn01_text_01@2x.png" alt="바로 그거! 배민에 다~ 있다">
+    
+    
+    
+            <!-- SECOND MAIN VIEW -->
+            <div id="section-second" class="scroll">
+                <div class="inner">
+                    <div class="content">
+                        <div class="text-second">
+                            <img src="./img/ctn01_text_01@2x.png" alt="바로 그거! 배민에 다~ 있다">
+                        </div>
+                        <div class="text">
+                            <p>3천만 이상이 선택한 배달의 민족.</p>
+                            <p>업계 최다 배달가능 업소 보유 중!</p>
+                            <p>(2017년 11월 기준)</p>
+                        </div>
+                    </div>
+                    <div class="road">
+                        <img src="./img/img-road@2x.png" alt="road">
+                    </div>
+                    <div class="bike">
+                        <img src="./img/img-bike@2x.png" alt="road">
+                    </div>
+                </div>
+            </div>
+    
+    
+    
+            <!-- THIRD MAIN VIEW -->
+            <div id="section-third" class="scroll">
+                <div class="inner">
+                    <div class="content">
+                        <div class="text-third">
+                            <img src="./img/ctn02_text_03@2x.png" alt="줄 서서 먹던 맛집도 우리집으로">
+                        </div>
+                        <div class="text">
+                            <p>배달이 안되던 동네 맛집까지~</p>
+                            <p>배민라이더스가 직접 배달해드립니다</p>
+                            <p>서울 전지역, 경기 및 관역시 일부 지역에서 서비스 이용 가능!</p>
+                        </div>
+                    </div>
+                    <div class="people">
+                        <img src="./img/img-people@2x.png" alt="people">
+                    </div>
+                </div>
+            </div>
+    
+    
+            
+            <!-- FOURTH MAIN VIEW -->
+            <div id="section-fourth" class="scroll">
+                <div class="inner">
+                    <div class="content">
+                        <div class="text-fourth">
+                            <img src="./img/ctn05_text_01@2x.png" alt="너에게 밥을보낸다 배민선물하기">
+                        </div>
+                        <div class="text">
+                            <p>지금 밥 한끼 보내주고 싶은 사람에게 선물해보세요.</p>
+                            <p>선물 받은 상품권으로 배민에서 자유롭게 주문할 수 있습니다.</p>
+                            <p>* 단, 전국별미, 사전예약 제외</p>
+                        </div>
+                    </div>
+                    <div class="present">
+                        <img src="./img/img-present@2x.png" alt="present">
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+            <!-- FIFTH MAIN VIEW -->
+            <div id="section-fifth" class="scroll">
+                <div class="inner">
+                    <div class="content">
+                        <div class="text-fifth">
+                            <img src="./img/ctn06_text_01@2x.png" alt="배민 쇼핑라이브는 지금 방송 중!">
+                        </div>
+                        <div class="text">
+                            <p>궁금한 맛은 직접 물어보고, 구경하는 재미</p>
+                            <p>이제 배민에서 생생하게 경험하세요!</p>
+                        </div>
+                    </div>
+                    <div class="shoppinglive">
+                        <img src="./img/img_shoppinglive.png" alt="shoppinglive">
+                    </div>
+                </div>
+            </div>
+    
+    
+    
+            <!-- SIXTH MAIN VIEW -->
+            <div id="section-sixth" class="scroll">
+                <div class="inner">
+                    <div class="content">
+                        <div class="text-sixth">
+                            <img src="./img/ctn04_text_01@2x.png" alt="너에게 밥을보낸다 배민선물하기">
+                        </div>
+                        <div class="text">
+                            <p>마트까지 가지 않아도, 기다리지 않아도</p>
+                            <p>주문하신 상품을 바로 배달해드립니다.</p>
+                            <p>서울, 인천 밒 경기 일부 지역에서 서비스 이용 가능!</p>
+                        </div>
+                    </div>
+                    <div class="bmart-rider">
+                        <img src="./img/bmart_rider@2x.png" alt="bmart-rider">
+                    </div>
+                </div>
+            </div>
+            
+    
+            
+            <!-- SEVENTH MAIN VIEW -->
+            <div id="section-seventh" class="scroll">
+                <div class="inner">
+                    <div class="content">
+                        <div class="text-seventh">
+                            <img src="./img/ctn03_text_03@2x.png" alt="너에게 밥을보낸다 배민선물하기">
+                        </div>
+                        <div class="text">
+                            <p>배민페이, 네이버페이 등은 물론</p>
+                            <p>각종 신용카드까지 결제 가능!</p>
+                        </div>
+                    </div>
+                    <div class="flag">
+                        <img src="./img/img-flag@2x.png" alt="flag">
+                    </div>
+                </div>
+            </div>
+    
+    
+    
+    
+            <!-- FOOTER -->
+            <div id="footer-info" class="scroll">
+                <div class="inner">
+                    <div class="title">
+                        <div class="txt">
+                            <img src="./img/txt-slogan@2x.png" alt="우리가 어떤 민족입니까 배달의민족">
+                        </div>
+                    </div>
+                    <div class="link">
+                        <ul class="other">
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <img src="./img/link_woowahan@2x.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <img src="./img/link_ceosite@2x.png" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="other">
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <img src="./img/link-store@2x.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <img src="./img/link-rider@2x.png" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sns-link">
+                        <ul>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <img src="./img/icon_facebook@2x.png" alt="facebook">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <img src="./img/icon_instagram@2x.png" alt="facebook">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <img src="./img/icon_blog@2x.png" alt="facebook">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <img src="./img/icon_youtube@2x.png" alt="facebook">
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                     <div class="text">
-                        <p>3천만 이상이 선택한 배달의 민족.</p>
-                        <p>업계 최다 배달가능 업소 보유 중!</p>
-                        <p>(2017년 11월 기준)</p>
+                        <p class="address">
+                            <span>(주)우아한형제들</span><br>
+                            <span>서울시 송파구 위례성대로 2 장은빌딩 2층</span>
+                        </p>
+                        <p class="business-info">
+                            <span>사업자번호:120-87-65763 <a href="javascript:void(0)">사업자정보확인</a></span><br>
+                            <span>통신판매업: 서울 송파-0515</span>
+                        </p>
+                        <p class="contact">
+                            <span>전자금융분쟁처리</span><br>
+                            <span>대표전화 : 1600-0987 | 팩스 : 050-6050-0400</span><br>
+                            <span><a href="javascript:void(0)">대표메일 : help@woowahan.com</a></span>
+                        </p>
                     </div>
-                </div>
-                <div class="road">
-                    <img src="./img/img-road@2x.png" alt="road">
-                </div>
-                <div class="bike">
-                    <img src="./img/img-bike@2x.png" alt="road">
                 </div>
             </div>
         </section>
 
 
-
-        <!-- THIRD MAIN VIEW -->
-        <section id="section-third">
-            <div class="inner">
-                <div class="content">
-                    <div class="text-third">
-                        <img src="./img/ctn02_text_03@2x.png" alt="줄 서서 먹던 맛집도 우리집으로">
-                    </div>
-                    <div class="text">
-                        <p>배달이 안되던 동네 맛집까지~</p>
-                        <p>배민라이더스가 직접 배달해드립니다</p>
-                        <p>서울 전지역, 경기 및 관역시 일부 지역에서 서비스 이용 가능!</p>
-                    </div>
-                </div>
-                <div class="people">
-                    <img src="./img/img-people@2x.png" alt="people">
-                </div>
-            </div>
-        </section>
-
-
-        
-        <!-- FOURTH MAIN VIEW -->
-        <section id="section-fourth">
-            <div class="inner">
-                <div class="content">
-                    <div class="text-fourth">
-                        <img src="./img/ctn05_text_01@2x.png" alt="너에게 밥을보낸다 배민선물하기">
-                    </div>
-                    <div class="text">
-                        <p>지금 밥 한끼 보내주고 싶은 사람에게 선물해보세요.</p>
-                        <p>선물 받은 상품권으로 배민에서 자유롭게 주문할 수 있습니다.</p>
-                        <p>* 단, 전국별미, 사전예약 제외</p>
-                    </div>
-                </div>
-                <div class="present">
-                    <img src="./img/img-present@2x.png" alt="present">
-                </div>
-            </div>
-        </section>
-        
-        
-        
-        <!-- FIFTH MAIN VIEW -->
-        <section id="section-fifth">
-            <div class="inner">
-                <div class="content">
-                    <div class="text-fifth">
-                        <img src="./img/ctn06_text_01@2x.png" alt="배민 쇼핑라이브는 지금 방송 중!">
-                    </div>
-                    <div class="text">
-                        <p>궁금한 맛은 직접 물어보고, 구경하는 재미</p>
-                        <p>이제 배민에서 생생하게 경험하세요!</p>
-                    </div>
-                </div>
-                <div class="shoppinglive">
-                    <img src="./img/img_shoppinglive.png" alt="shoppinglive">
-                </div>
-            </div>
-        </section>
-
-
-
-        <!-- SIXTH MAIN VIEW -->
-        <section id="section-sixth">
-            <div class="inner">
-                <div class="content">
-                    <div class="text-sixth">
-                        <img src="./img/ctn04_text_01@2x.png" alt="너에게 밥을보낸다 배민선물하기">
-                    </div>
-                    <div class="text">
-                        <p>마트까지 가지 않아도, 기다리지 않아도</p>
-                        <p>주문하신 상품을 바로 배달해드립니다.</p>
-                        <p>서울, 인천 밒 경기 일부 지역에서 서비스 이용 가능!</p>
-                    </div>
-                </div>
-                <div class="bmart-rider">
-                    <img src="./img/bmart_rider@2x.png" alt="bmart-rider">
-                </div>
-            </div>
-        </section>
-        
-
-        
-        <!-- SEVENTH MAIN VIEW -->
-        <section id="section-seventh">
-            <div class="inner">
-                <div class="content">
-                    <div class="text-seventh">
-                        <img src="./img/ctn03_text_03@2x.png" alt="너에게 밥을보낸다 배민선물하기">
-                    </div>
-                    <div class="text">
-                        <p>배민페이, 네이버페이 등은 물론</p>
-                        <p>각종 신용카드까지 결제 가능!</p>
-                    </div>
-                </div>
-                <div class="flag">
-                    <img src="./img/img-flag@2x.png" alt="flag">
-                </div>
-            </div>
-        </section>
-
-
-
-
-        <!-- FOOTER -->
-        <footer id="footer-info">
-            <div class="inner">
-                <div class="title">
-                    <div class="txt">
-                        <img src="./img/txt-slogan@2x.png" alt="우리가 어떤 민족입니까 배달의민족">
-                    </div>
-                </div>
-                <div class="link">
-                    <ul class="other">
-                        <li>
-                            <a href="javascript:void(0)">
-                                <img src="./img/link_woowahan@2x.png" alt="">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0)">
-                                <img src="./img/link_ceosite@2x.png" alt="">
-                            </a>
-                        </li>
-                    </ul>
-                    <ul class="other">
-                        <li>
-                            <a href="javascript:void(0)">
-                                <img src="./img/link-store@2x.png" alt="">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0)">
-                                <img src="./img/link-rider@2x.png" alt="">
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="sns-link">
-                    <ul>
-                        <li>
-                            <a href="javascript:void(0)">
-                                <img src="./img/icon_facebook@2x.png" alt="facebook">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0)">
-                                <img src="./img/icon_instagram@2x.png" alt="facebook">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0)">
-                                <img src="./img/icon_blog@2x.png" alt="facebook">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0)">
-                                <img src="./img/icon_youtube@2x.png" alt="facebook">
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="text">
-                    <p class="address">
-                        <span>(주)우아한형제들</span><br>
-                        <span>서울시 송파구 위례성대로 2 장은빌딩 2층</span>
-                    </p>
-                    <p class="business-info">
-                        <span>사업자번호:120-87-65763 <a href="javascript:void(0)">사업자정보확인</a></span><br>
-                        <span>통신판매업: 서울 송파-0515</span>
-                    </p>
-                    <p class="contact">
-                        <span>전자금융분쟁처리</span><br>
-                        <span>대표전화 : 1600-0987 | 팩스 : 050-6050-0400</span><br>
-                        <span><a href="javascript:void(0)">대표메일 : help@woowahan.com</a></span>
-                    </p>
-                </div>
-            </div>
-        </footer>
     </div>
 </body>
 </html>
