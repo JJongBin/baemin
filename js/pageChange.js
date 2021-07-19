@@ -11,6 +11,7 @@ function pageDown(event, height) {
         
         const aniTarget = wrap.children[nowPage].querySelector(".animation");
         console.log(aniTarget)
+
         if (aniTarget !== null){
             setTimeout(function() {
                 if(aniTarget.classList.contains("bmart-rider")){
@@ -21,6 +22,11 @@ function pageDown(event, height) {
                     aniTarget.classList.add("move")
                 }
             }, 600)
+        }else{
+            header1.classList.remove("show");
+            header2.classList.remove("show");
+            header1.classList.add("show-hidden");
+            header2.classList.add("show-hidden");
         }
 
     }
@@ -37,6 +43,14 @@ function pageUp(event, height) {
         // console.log(wrap)
         wrap.style.transform = `translate3d(0px, ${-move}px, 0px)`;
 
+        const aniTarget = wrap.children[nowPage].querySelector(".animation");
+
+        if (prevPage === 7){
+            header1.classList.remove("show-hidden");
+            header2.classList.remove("show-hidden");
+            header1.classList.add("show");
+            header2.classList.add("show");
+        }
     }
 }
 
@@ -64,6 +78,9 @@ let check = true;
 
 const app = document.querySelector("#download_btn");
 const riderBener = document.querySelector("#rider-bener");
+const header = document.querySelector(".header-inner");
+const header1 = header.querySelector("#logo");
+const header2 = header.querySelector(".submenu");
 // console.log(app)
 
 
@@ -78,7 +95,7 @@ window.addEventListener('mousewheel', function(event) {
         const height = window.innerHeight;
         // const aniTarget = wrap.children[nowPage].querySelector(".animation");
         // console.log(aniTarget);
-        console.dir(event.deltaY);
+        // console.log(event.deltaY);
         // console.dir(event)
     
         if(event.deltaY > 0) {

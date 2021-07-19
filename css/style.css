@@ -55,6 +55,9 @@ body{
 .hidden{
     opacity: 0;
 }
+.animation{
+    line-height: 0;
+}
 
 .move{
     animation: move 0.8s ease forwards;
