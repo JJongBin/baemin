@@ -10,8 +10,18 @@ function pageDown(event, height) {
         wrap.style.transform = `translate3d(0px, ${-move}px, 0px)`;
         
         const aniTarget = wrap.children[nowPage].querySelector(".animation");
-        // console.log(aniTarget)
-        // if 
+        console.log(aniTarget)
+        if (aniTarget !== null){
+            setTimeout(function() {
+                if(aniTarget.classList.contains("bmart-rider")){
+                    aniTarget.classList.add("move-left")
+                }else if(aniTarget.classList.contains("bike")){
+                    aniTarget.classList.add("move-bike")
+                }else{
+                    aniTarget.classList.add("move")
+                }
+            }, 600)
+        }
 
     }
 }
@@ -60,15 +70,15 @@ const riderBener = document.querySelector("#rider-bener");
 //_________________________________________
 // eventlistener
 
-history.scrollRestoration = "manual"
-window.addEventListener('wheel', function(event) {
+history.scrollRestoration = "manual"    // 새로고침시 최상단으로
+window.addEventListener('mousewheel', function(event) {
     if(check === true){
         check = false;
         event.preventDefault();
         const height = window.innerHeight;
         // const aniTarget = wrap.children[nowPage].querySelector(".animation");
         // console.log(aniTarget);
-        console.log(event.deltaY);
+        console.dir(event.deltaY);
         // console.dir(event)
     
         if(event.deltaY > 0) {
@@ -80,20 +90,20 @@ window.addEventListener('wheel', function(event) {
             activeSection();
         }
         // animation
-        if (wrap.children[0].classList.contains("active")){
+        if(wrap.children[0].classList.contains("active")) {
             if (app.classList.contains("show")){
-                app.classList.add("hidden");
+                app.classList.add("show-hidden");
             }
             app.classList.remove("show");
-            if(riderBener.classList.contains("hidden")){
+            if(riderBener.classList.contains("show-hidden")) {
                 riderBener.classList.add("show");
             }
-            riderBener.classList.remove("hidden");
-        }else{
-            app.classList.remove("hidden");
+            riderBener.classList.remove("show-hidden");
+        }else {
+            app.classList.remove("show-hidden");
             app.classList.add("show");
             riderBener.classList.remove("show");
-            riderBener.classList.add("hidden");
+            riderBener.classList.add("show-hidden");
         }
 
 

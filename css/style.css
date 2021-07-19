@@ -47,20 +47,28 @@ body{
     transition: all 700ms ease 0s;
     /* transform: translate3d(0px, -1009px, 0px) */
 }
-.hidden{
+.show-hidden{
     /* display: none; */
     opacity: 0;
     animation: show-remove 0.8s ease forwards;
 }
+.hidden{
+    opacity: 0;
+}
+
 .move{
     animation: move 0.8s ease forwards;
 }
 .move-left{
     animation: move-left 0.8s ease forwards;
 }
+.move-bike{
+    animation: move-bike 0.8s ease forwards;
+}
 .show{
     animation: show 0.8s ease forwards;
 }
+
 @keyframes show {
     0% {
         opacity: 0; 
@@ -97,6 +105,18 @@ body{
         -webkit-transform: translateX(25%);
         transform: translateX(25%);
         opacity: 1; 
+    } 
+}
+@keyframes move-bike {
+    0% {
+        -webkit-transform: translateX(0) translateY(0);
+        transform: translateX(0) translateY(0);
+        /* opacity: 0;  */
+    }
+    100% {
+        -webkit-transform: translateX(-60%) translateY(-60%);
+        transform: translateX(60%) translateY(60%);
+        /* opacity: 1;  */
     } 
 }
 
