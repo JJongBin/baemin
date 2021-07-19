@@ -46,8 +46,58 @@ body{
     transition: all 700ms ease 0s;
     /* transform: translate3d(0px, -1009px, 0px) */
 }
-
-
+.hidden{
+    /* display: none; */
+    opacity: 0;
+    animation: show-remove 0.8s ease forwards;
+}
+.move{
+    animation: move 0.8s ease forwards;
+}
+.move-left{
+    animation: move-left 0.8s ease forwards;
+}
+.show{
+    animation: show 0.8s ease forwards;
+}
+@keyframes show {
+    0% {
+        opacity: 0; 
+    }
+    100% {
+        opacity: 1; } 
+}
+@keyframes show-remove {
+    0% {
+        opacity: 1; 
+    }
+    100% {
+        opacity: 0; } 
+}
+@keyframes move {
+    0% {
+        -webkit-transform: translateY(100%);
+        transform: translateY(100%);
+        opacity: 0; 
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1; } 
+}
+  
+@keyframes move-left {
+    0% {
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+        opacity: 0; 
+    }
+    100% {
+        -webkit-transform: translateX(25%);
+        transform: translateX(25%);
+        opacity: 1; 
+    } 
+}
 
 
 
@@ -67,6 +117,7 @@ header .menu{
     right: 10px;
     width: 200px;
     z-index: 10;
+    opacity: 0;
 }
 #download_btn img{
     width: 100%;
