@@ -53,15 +53,14 @@ let check = true;
 // ANIMATION
 
 const app = document.querySelector("#download_btn");
+const riderBener = document.querySelector("#rider-bener");
 // console.log(app)
 
 
 //_________________________________________
 // eventlistener
 
-// const reloadGotop = document.body.getBoundingClientRect();
-// window.scrollTo(reloadGotop.y, 0)
-
+history.scrollRestoration = "manual"
 window.addEventListener('wheel', function(event) {
     if(check === true){
         check = false;
@@ -69,7 +68,7 @@ window.addEventListener('wheel', function(event) {
         const height = window.innerHeight;
         // const aniTarget = wrap.children[nowPage].querySelector(".animation");
         // console.log(aniTarget);
-        // console.log(event.deltaY);
+        console.log(event.deltaY);
         // console.dir(event)
     
         if(event.deltaY > 0) {
@@ -86,9 +85,15 @@ window.addEventListener('wheel', function(event) {
                 app.classList.add("hidden");
             }
             app.classList.remove("show");
+            if(riderBener.classList.contains("hidden")){
+                riderBener.classList.add("show");
+            }
+            riderBener.classList.remove("hidden");
         }else{
             app.classList.remove("hidden");
             app.classList.add("show");
+            riderBener.classList.remove("show");
+            riderBener.classList.add("hidden");
         }
 
 
@@ -96,6 +101,6 @@ window.addEventListener('wheel', function(event) {
 
         setTimeout(function() {
             check = true;
-        }, 500)
+        }, 300)
     }
 },{passive: false});

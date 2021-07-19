@@ -38,6 +38,7 @@ body{
     bottom: 3%;
     left: 50%;
     width: 20%;
+    z-index: 10;
 }
 /* #scroll-icon img{
     margin-left: -20%;
@@ -123,6 +124,17 @@ header .menu{
     width: 100%;
     height: auto;
 }
+#rider-bener{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 109px;
+    z-index: 10;
+}
+#rider-bener img{
+    width: 100%;
+    height: auto;
+}
 #logo{
     position: absolute;
     top: 60px;
@@ -156,17 +168,6 @@ header .submenu li:last-child{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
-}
-#section-first .bener{
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 109px;
-    z-index: 10;
-}
-#section-first .bener img{
-    width: 100%;
-    height: auto;
 }
 
 #section-first .header-inner .text-main{
