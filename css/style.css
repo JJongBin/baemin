@@ -122,6 +122,20 @@ body{
         /* opacity: 1;  */
     } 
 }
+#pagination{
+    position: fixed;
+    top: 50%;
+    right: 5%;
+    z-index: 10;
+}
+#pagination li{
+    display: block;
+    background-image: url("../img/dotScroll02@2x.png");
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    background-size: cover;
+}
 
 
 

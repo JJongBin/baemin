@@ -10,7 +10,8 @@ function pageDown(event, height) {
         wrap.style.transform = `translate3d(0px, ${-move}px, 0px)`;
         
         const aniTarget = wrap.children[nowPage].querySelector(".animation");
-        console.log(aniTarget)
+        // console.log(aniTarget)
+        const dotScroll = dotScrolls.children[nowPage-1];
 
         if (aniTarget !== null){
             setTimeout(function() {
@@ -43,13 +44,15 @@ function pageUp(event, height) {
         // console.log(wrap)
         wrap.style.transform = `translate3d(0px, ${-move}px, 0px)`;
 
-        const aniTarget = wrap.children[nowPage].querySelector(".animation");
+        // const aniTarget = wrap.children[nowPage].querySelector(".animation");
+
 
         if (prevPage === 7){
             header1.classList.remove("show-hidden");
             header2.classList.remove("show-hidden");
             header1.classList.add("show");
             header2.classList.add("show");
+
         }
     }
 }
@@ -64,7 +67,7 @@ function activeSection() {
 
 
 const wrap = document.querySelector("#section-wrap");
-const page = wrap.children;
+// const page = wrap.children;
 let nowPage = 0;
 let prevPage = 0;
 let check = true;
@@ -81,6 +84,7 @@ const riderBener = document.querySelector("#rider-bener");
 const header = document.querySelector(".header-inner");
 const header1 = header.querySelector("#logo");
 const header2 = header.querySelector(".submenu");
+const dotScrolls = document.querySelector("#pagination");
 // console.log(app)
 
 
@@ -93,7 +97,6 @@ window.addEventListener('mousewheel', function(event) {
         check = false;
         event.preventDefault();
         const height = window.innerHeight;
-        // const aniTarget = wrap.children[nowPage].querySelector(".animation");
         // console.log(aniTarget);
         // console.log(event.deltaY);
         // console.dir(event)
@@ -106,6 +109,7 @@ window.addEventListener('mousewheel', function(event) {
             pageUp(event, height);
             activeSection();
         }
+        
         // animation
         if(wrap.children[0].classList.contains("active")) {
             if (app.classList.contains("show")){
