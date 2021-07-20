@@ -71,6 +71,9 @@ body{
 .show{
     animation: show 1s ease forwards;
 }
+.jump{
+    animation: jump 0.5s ease 0s 3 normal;
+}
 
 @keyframes show {
     0% {
@@ -122,6 +125,28 @@ body{
         /* opacity: 1;  */
     } 
 }
+@keyframes jump {
+    0% {
+        transform: translateY(0);
+    }
+    20% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(0);
+    }
+    80% {
+        transform: translateY(-15px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
 #pagination{
     position: fixed;
     top: 50%;

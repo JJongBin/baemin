@@ -85,6 +85,7 @@ const header = document.querySelector(".header-inner");
 const header1 = header.querySelector("#logo");
 const header2 = header.querySelector(".submenu");
 const dotScrolls = document.querySelector("#pagination");
+const scrollIcon = document.querySelector("#scroll-icon")
 // console.log(app)
 
 
@@ -137,7 +138,9 @@ window.addEventListener('mousewheel', function(event) {
                 dotScrolls.classList.add("show-hidden");
             }
             dotScrolls.classList.remove("show");
-            
+
+            //scroll icon
+            scrollIcon.classList.remove("jump");
         }else {
             // app download
             app.classList.remove("show-hidden");
@@ -156,6 +159,10 @@ window.addEventListener('mousewheel', function(event) {
             if (prevDotSelect !== undefined){
                 prevDotSelect.classList.remove("select");
             }
+            // scroll icon
+            if(!scrollIcon.classList.contains("jump")){
+                scrollIcon.classList.add("jump");
+            };
             // console.log("now",dotSelect)
             // console.log("prev",prevDotSelect)
         }
