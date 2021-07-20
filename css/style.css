@@ -220,6 +220,9 @@ header .submenu li{
     display: inline;
     margin-right: 15px;
 }
+header .submenu li a{
+    text-decoration: none;
+}
 header .submenu li:last-child{
     padding-right: 0;
 }
