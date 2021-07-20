@@ -11,7 +11,7 @@ function pageDown(event, height) {
         
         const aniTarget = wrap.children[nowPage].querySelector(".animation");
         // console.log(aniTarget)
-        const dotScroll = dotScrolls.children[nowPage-1];
+        
 
         if (aniTarget !== null){
             setTimeout(function() {
@@ -96,7 +96,9 @@ window.addEventListener('mousewheel', function(event) {
     if(check === true){
         check = false;
         event.preventDefault();
+
         const height = window.innerHeight;
+        // const dotScroll = dotScrolls.children[nowPage-1];
         // console.log(aniTarget);
         // console.log(event.deltaY);
         // console.dir(event)
@@ -112,22 +114,51 @@ window.addEventListener('mousewheel', function(event) {
         
         // animation
         if(wrap.children[0].classList.contains("active")) {
+            // app download
             if (app.classList.contains("show")){
                 app.classList.add("show-hidden");
             }
             app.classList.remove("show");
+            
+            // rider bener
             if(riderBener.classList.contains("show-hidden")) {
                 riderBener.classList.add("show");
             }
             riderBener.classList.remove("show-hidden");
+            
+            // dot scroll
+            if (dotScrolls.classList.contains("show")){
+                dotScrolls.classList.add("show-hidden");
+            }
+            dotScrolls.classList.remove("show");
+        }else if(wrap.children[7].classList.contains("active")){
+            // dot scroll
+            if (dotScrolls.classList.contains("show")){
+                dotScrolls.classList.add("show-hidden");
+            }
+            dotScrolls.classList.remove("show");
+            
         }else {
+            // app download
             app.classList.remove("show-hidden");
             app.classList.add("show");
+            
+            // rider bener
             riderBener.classList.remove("show");
             riderBener.classList.add("show-hidden");
+            
+            // dot scroll
+            dotScrolls.classList.remove("show-hidden");
+            dotScrolls.classList.add("show");
+            const dotSelect = dotScrolls.children[nowPage-1];
+            const prevDotSelect = dotScrolls.children[prevPage-1];
+            dotSelect.classList.add("select");
+            if (prevDotSelect !== undefined){
+                prevDotSelect.classList.remove("select");
+            }
+            // console.log("now",dotSelect)
+            // console.log("prev",prevDotSelect)
         }
-
-
 
 
         setTimeout(function() {
